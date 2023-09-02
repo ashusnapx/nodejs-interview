@@ -42,21 +42,13 @@ function generateRandomNames(count) {
 ## Output
 When the "/getName" endpoint is accessed, it returns a JSON array of 10 random names. For other routes, it responds with a "Hello, this is Ashutosh" message.
 
-## Video Proof
-To provide visual proof of the assignment's functionality, you can find two images below:
-
-![Demo]([demo.gif](https://im.ezgif.com/tmp/ezgif-1-6f8f115115.gif))
+## Screenshots and GIF
 
 1. **Code Screenshot:**
-   ![Code Screenshot]([link_to_code_screenshot.png](https://i.postimg.cc/7hxGX41c/Screenshot-2023-09-02-at-11-46-30-PM.png))
+   ![Code Screenshot](https://i.postimg.cc/7hxGX41c/Screenshot-2023-09-02-at-11-46-30-PM.png)
 
 2. **Output Screenshot:**
-   ![Output Screenshot]([link_to_output_screenshot.png](https://i.postimg.cc/26NBbh1C/Screenshot-2023-09-02-at-11-45-42-PM.png))
+   ![Output Screenshot](https://i.postimg.cc/26NBbh1C/Screenshot-2023-09-02-at-11-45-42-PM.png)
 
-Additionally, you can provide a video demonstration or proof of the assignment's functionality. Please find the video at the following link:
-[Video Proof](link_to_video_proof.mp4)
-
-Feel free to replace "link_to_code_screenshot.png," "link_to_output_screenshot.png," and "link_to_video_proof.mp4" with the actual links or file paths to your images and video.
-
-Thank you for reviewing my assignment!
-```
+3. **Demo GIF:**
+   ![Demo GIF](https://im.ezgif.com/tmp/ezgif-1-6f8f115115.gif)
