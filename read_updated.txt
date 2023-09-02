@@ -1,0 +1,1 @@
+Creating this folder using fileSync's method ie. writeFileSync. This writeFileSync is not a good approach, as this is synchronus, which means, other's have to wait, until this gets finished. this is added using append file sync method.
