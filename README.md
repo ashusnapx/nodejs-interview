@@ -1,10 +1,11 @@
-```markdown
 # Node.js Assignment
 
 ## Assignment Description
 This repository contains code for an assignment given by Mr. Siddhant Goswami. The task is to create an HTTP server using Node.js that provides an endpoint "/getName". When this endpoint is accessed, it generates and returns 10 random names in JSON format. Additionally, it responds with a "Hello, this is Ashutosh" message for other routes.
 
 ## Code
+```markdown
+
 The following Node.js code is used to implement the assignment:
 
 ```javascript
