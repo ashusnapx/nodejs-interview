@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Information</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+                margin: 4;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .container {
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                padding: 20px;
+            }
+
+            h1 {
+                color: #333;
+            }
+
+            .weather-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                background-color: #f9f9f9;
+                margin-top: 20px;
+            }
+
+            .weather-card h2 {
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .weather-card p {
+                font-size: 20px;
+                color: #666;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Weather Information</h1>
+            <div class="weather-card">
+               <h2 class="location">
+                City Name, Country Code (e.g., New York, US)
+               </h2>
+                <p id="date">WED | OCT 2024 | 10:49 AM</p>
+                <H1>Temperature: 25°C</H1>
+                <H3 class="min_max">Min 26.49°C | Max 27.89°C</H3>
+            </div>
+        </div>
+
+        <script>
+            const currDate = document.getElementById( "date" );
+
+            const getCurrDay = () => {
+                let currTime = new Date();
+                let daysOfWeek = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ];
+                let dayOfWeek = daysOfWeek[ currTime.getDay() ];
+                let month = currTime.toLocaleString( "default", { month: "short" } );
+                console.log(month);
+                let time = currTime.toLocaleString( "en-US", { hour: "numeric", minute: "numeric", hour12: true } );
+                currDate.innerText = `${ dayOfWeek } | ${ month.toUpperCase() } ${ currTime.getDate() } | ${ time }`;
+            }
+
+            getCurrDay(); // Call the function to update the date
+        </script>
+
+    </body>
+
+</html>
+
+
+<!-- https://api.openweathermap.org/data/2.5/weather?q=Singrauli,IN&appid=48f33766d3bf213f0e3b4c86cf616e73 -->
